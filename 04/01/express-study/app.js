@@ -1,5 +1,9 @@
 'use strict';
 const debug = require('debug');
+const debugINfo = debug('module:info');
+setInterval(() => {
+  debugINfo('some information');
+}, 1000);
 const debugError = debug('module:error');
 setInterval(() => {
   debugError('some error.');
