@@ -5,13 +5,13 @@ module.exports = {
     path: __dirname + '/public/javascripts',
     filename: 'bundle.js',
   },
-  mode: 'name',
+  mode: 'none',
   module: {
     rules: [{
       test: /\.js$/,
       exclude: /node_modules/,
       use: {
-        loade: 'babel-loader',
+        loader: 'babel-loader',
         options: {
           presets: ['@babel/preset-env']
         }
